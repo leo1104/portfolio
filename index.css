@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+/* Head  */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(0,180,219);
+background: -moz-linear-gradient(90deg, rgba(0,180,219,1) 0%, rgba(34,68,136,1) 50%, rgba(0,131,176,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(0,180,219,1) 0%, rgba(34,68,136,1) 50%, rgba(0,131,176,1) 100%);
+background: linear-gradient(90deg, rgba(0,180,219,1) 0%, rgba(34,68,136,1) 50%, rgba(0,131,176,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00b4db",endColorstr="#0083b0",GradientType=1);
+    color: white;
+    padding: 2rem 1.5rem;
+}
+header h1{
+    font-family: 'Open Sans', sans-serif;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 1rem;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+}
+header button{
+    border-radius: 2rem;
+    padding: 0.5rem 1.8rem;
+    border: 1px solid white;
+    background-color: inherit;
+    color: white;
+    font-family: 'Yatra One', cursive;
+}
+header button:hover{
+    cursor: pointer;
+
+}
+/* Profile information  */
+.profile{
+    background: rgb(0,180,219);
+background: -moz-linear-gradient(90deg, rgba(0,180,219,1) 0%, rgba(34,68,136,1) 50%, rgba(0,131,176,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(0,180,219,1) 0%, rgba(34,68,136,1) 50%, rgba(0,131,176,1) 100%);
+background: linear-gradient(90deg, rgba(0,180,219,1) 0%, rgba(34,68,136,1) 50%, rgba(0,131,176,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00b4db",endColorstr="#0083b0",GradientType=1);
+    display: flex;
+    padding: 0 3rem;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+}
+.profile img{
+    border-radius: 50%;
+    padding: .5rem;
+    border: 2px solid white;
+    width: 20%;
+}
+.profile .intdet{
+    color: white;
+    margin-left: 4rem;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.info{
+    background-color: white;
+    color: black;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 5rem;
+padding-bottom:10rem;
+
+}
+.info .dev h2{
+    text-align: center;
+}
+.info .dev p{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.info .dev p a{
+    text-decoration: solid;
+    color: black;
+}
+.info .dev p a:hover{
+    text-decoration: underline;
+}
+
+/* waves  */
+div.waves{
+    width: 100%;
+    bottom: 0;
+    /*height: 100%;*/
+    position: relative;
+    z-index: 99;
+  }
+  svg{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    animation-name: move-left;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  .spacer{
+    height: 100px;
+    width: 100%;
+  }
+  
+  @keyframes example {
+    0%   {
+      left:0px;
+      top:0px;}
+    
+    50%  {
+      left:-2000px;
+      top:200px;}
+    
+    100% {
+      left:0px; 
+      top:0px;}
+  }
+  
+  
