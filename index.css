@@ -7,6 +7,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 
+
+
 *{
     margin: 0;
     padding: 0;
@@ -15,6 +17,7 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    
     
 }
 /* Head  */
@@ -30,8 +33,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00b4db",endCo
     color: white;
     padding: 2rem 1.5rem;
 }
-header h1{
-    font-family: 'Open Sans', sans-serif;
+header img{
+    width: 10%;
 }
 nav ul{
     display: flex;
@@ -43,6 +46,10 @@ nav ul li{
     font-family: 'Open Sans', sans-serif;
     font-size: 1.3rem;
 }
+nav ul li a{
+  text-decoration: none;
+  color: white;
+}
 header button{
     border-radius: 2rem;
     padding: 0.5rem 1.8rem;
@@ -53,7 +60,8 @@ header button{
 }
 header button:hover{
     cursor: pointer;
-
+    background-color: rgba(34,68,136,1);
+    padding: 1rem 2.2rem;
 }
 /* Profile information  */
 .profile{
@@ -65,7 +73,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00b4db",endCo
     display: flex;
     padding: 0 3rem;
     padding-top: 10rem;
-    padding-bottom: 2rem;
+    padding-bottom: 4.5rem;
 }
 .profile img{
     border-radius: 50%;
@@ -80,7 +88,19 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00b4db",endCo
     margin-top: 2rem;
     font-family: 'Open Sans', sans-serif;
 }
+.contact{
+  padding-top: 2rem;
+}
 
+.wfor{
+animation: FadeIn 3s;
+}
+.phone{
+  animation: FadeIn 5s;
+}
+.email{
+  animation: FadeIn 7s;
+}
 .info{
     background-color: white;
     color: black;
@@ -88,6 +108,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 5rem;
+padding-top: 2rem;
 padding-bottom:10rem;
 
 }
@@ -106,41 +127,246 @@ padding-bottom:10rem;
     text-decoration: underline;
 }
 
-/* waves  */
+
+  /* skills */
+
+
+.skills{
+    animation: 10s ease-in;
+margin-bottom: 2rem;
+}
+.skills h2{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: 'Open Sans', sans-serif;
+    animation: FadeIn 5s;
+}
+
+
+@keyframes FadeIn{
+  from {
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+  /* progress bar  */
+
+.frosted{
+    margin-bottom: 5rem;
+}
+
+
+
+  .container {
+    padding:1rem 2rem ;
+    width: 100%;
+    text-align: center;
+  }
+  .container h3{
+      text-align: left;
+      margin-left: 2rem;
+  }
+  .progress2 {
+    padding: 6px;
+    border-radius: 30px;
+    background: white;  
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+  }
+  
+  .progress-bar2 {
+    height: 18px;
+    border-radius: 30px;
+    background-image: black;
+    transition: 0.4s linear;  
+    transition-property: width, background-color;    
+  }
+  
+  .progress-moved .progress-bar2 {
+    width: 85%; 
+    background: rgb(0,180,219);
+background: -moz-linear-gradient(90deg, rgba(0,180,219,1) 0%, rgba(34,68,136,1) 50%, rgba(0,131,176,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(0,180,219,1) 0%, rgba(34,68,136,1) 50%, rgba(0,131,176,1) 100%);
+background: linear-gradient(90deg, rgba(0,180,219,1) 0%, rgba(34,68,136,1) 50%, rgba(0,131,176,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00b4db",endColorstr="#0083b0",GradientType=1);  
+    animation: progressAnimation 6s;
+  }
+  
+  @keyframes progressAnimation {
+    0%   { width: 5%; background-color: #F9BCCA;}
+    100% { width: 85%; background-color: #EF476F; }
+  }
+  @keyframes progressAnimation1 {
+    0%   { width: 5%; background-color: #F9BCCA;}
+    100% { width: 33%; background-color: #EF476F; }
+  }
+  @keyframes progressAnimation2 {
+    0%   { width: 5%; background-color: #F9BCCA;}
+    100% { width: 22%; background-color: #EF476F; }
+  }
+   .progress-moved .pr3{
+width: 33%;
+animation: progressAnimation1 6s;
+  }
+  .progress-moved .pr4{
+width: 22%;
+animation: progressAnimation2 6s;
+  }
+
+  /* education */
+  .study{
+    color: white;
+    background: rgb(0,180,219);
+background: -moz-linear-gradient(90deg, rgba(0,180,219,1) 0%, rgba(34,68,136,1) 50%, rgba(0,131,176,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(0,180,219,1) 0%, rgba(34,68,136,1) 50%, rgba(0,131,176,1) 100%);
+background: linear-gradient(90deg, rgba(0,180,219,1) 0%, rgba(34,68,136,1) 50%, rgba(0,131,176,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00b4db",endColorstr="#0083b0",GradientType=1);
+padding: 2rem 0;
+  }
+  .skH1{
+  animation: FadeIn 10s;
+  
+  }
+  /* .school{
+    animation: slide 0.5s;
+  }
+  @keyframes slide{
+    from{
+      margin-left:-10rem ;
+    }
+    to{
+      padding-left: 2rem;
+    }
+  } */
+
+  .edu{
+      display: flex;
+      margin: 2rem;
+      padding-left: 2rem;
+     background-color: white;
+     color: black;
+      box-shadow: 2px 2px 16px rgba(34,68,136,1);
+      border-radius: 1rem;
+      align-items: center;
+  }
+  .edu img{
+      width: 14%;
+      height: 14%;
+      border-radius: 2rem;
+  }
+  .schl{
+      padding: 5rem;
+      padding-bottom:7rem;
+  }
+  .schl h1{
+    font-family: 'Open Sans', sans-serif;
+  }
+
+/* Projects  */
+.bg{
+  margin-top: 3rem;
+}
+.webD{
+  text-align: center;
+  font-weight: 900;
+}
+.projects{
+  display: flex;
+  align-items: center;
+  
+  justify-content: center;
+}
+.pro{
+  cursor: pointer;
+  align-items: center;
+  margin: 2rem;
+  width: 33.33%;
+  padding: 2rem;
+  box-shadow: 2px 2px 16px rgba(34,68,136,1) ;
+  border-radius: 0.5rem;
+}
+.pro:hover{
+  width: 35%;
+}
+.pro h2{
+text-align: center;
+}
+.pro img{
+  display: flex;
+  margin: auto;
+width: 40%;
+}
+.pro h3{
+  text-align: center;
+  }
+
+.second{
+padding: 2.6rem;
+}
+.third{
+padding: 2.6rem;
+}
+
+/* footer */
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+ 
+}
+
+footer img{
+width: 5%;
+margin: 2rem;
+cursor: pointer;
+}
+footer img:hover{
+  width: 7%;
+}
+
+  /* waves  */
+
+
+
+
 div.waves{
-    width: 100%;
-    bottom: 0;
-    /*height: 100%;*/
-    position: relative;
-    z-index: 99;
-  }
-  svg{
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    animation-name: move-left;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-  }
-  .spacer{
-    height: 100px;
-    width: 100%;
-  }
+  width: 100%;
+  bottom: 0;
+  /*height: 100%;*/
+  position: relative;
+  z-index: 99;
+  margin-top: 10rem;
+}
+svg{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  animation-name: move-left;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.spacer{
+  height: 100px;
+  width: 100%;
+}
+
+
+
+@keyframes example {
+  0%   {
+    left:0px;
+    top:0px;}
   
-  @keyframes example {
-    0%   {
-      left:0px;
-      top:0px;}
-    
-    50%  {
-      left:-2000px;
-      top:200px;}
-    
-    100% {
-      left:0px; 
-      top:0px;}
-  }
+  50%  {
+    left:-2000px;
+    top:200px;}
   
-  
+  100% {
+    left:0px; 
+    top:0px;}
+}

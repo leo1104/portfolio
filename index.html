@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=.55">
     <title>Prantosh Verma</title>
+    
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="phone.css">
 </head>
 <body>
     
     <header>
-        <h1>Prantosh Verma</h1>
+        <img src="images/sign.png" alt="">
         <nav>
             <ul>
-                <li>Home</li>
-                <li>Work</li>
-                <li>Service</li>
-                <li>Blog</li>
-                <li>Contact</li>
+                <li> <a href="">Home</a> </li>
+                
+                <li> <a href="#prof">Proficiency</a> </li>
+                <li> <a href="#Education">Education</a></li>
+                <li><a href="#Projects">Projects</a></li>
             </ul>
         </nav>
 
-        <button>Let's Talk</button>
+        <button onclick="">Let's Talk</button>
     </header>
 
 
@@ -31,25 +33,138 @@
             <h1>Hey, I am Prantosh</h1>
             <h1>Web developer and Data Scientist</h1>
         </div>
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<lottie-player src="https://assets9.lottiefiles.com/packages/lf20_PBgNop.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop controls autoplay></lottie-player>
+        
     </div>
 
+
+
+
+    <div class="skills contact">
+      <h2>Connect</h2>
+    </div>
 
     <div class="info">
-        <div class="dev">
-            <h2>Develop for</h2>
-            <p>Web and data science</p>
+
+        <div class="dev ">
+            <h2 class="wfor">Develop for</h2>
+            <p class="wfor">Web and data science</p>
         </div>
-        <div class="dev">
-            <h2>Phone</h2>
-            <p>+91 8789828752</p>
+        <div class="dev ">
+            <h2 class="phone">Phone</h2>
+            <p class="phone">+91 8789828752</p>
         </div>
-        <div class="dev">
-            <h2>Drop your message</h2>
-            <p> <a href="prantoshv@gmail.com">prantoshv@gmail.com</a> </p>
+        <div class="dev ">
+            <h2 class="email">Drop your message</h2>
+            <p class="email"> <a href="prantoshv@gmail.com">prantoshv@gmail.com</a> </p>
         </div>
     </div>
+
+<!-- progress bar  -->
+<div class="skills" id="prof">
+  <h2>Proficiency</h2>
+</div>
+
+<div class="frosted">
+<div class="container">
+  <h3>HTML/CSS/Javascript</h3>    
+  <div class="progress2 progress-moved">
+    <div class="progress-bar2" >
+    </div>                       
+  </div> 
+</div>
+<div class="container">
+  <h3>Django</h3>    
+  <div class="progress2 progress-moved ">
+    <div class="pr3 progress-bar2 " >
+    </div>                       
+  </div> 
+</div>
+<div class="container">
+  <h3>Data Science</h3>    
+  <div class="progress2 progress-moved ">
+    <div class="progress-bar2 pr4" >
+    </div>                       
+  </div> 
+</div>
+</div>
+
+<!-- education -->
+<div class="study" id="Education">
+<div class="skH1 skills ">
+  <h2 >Education</h2>
+  
+</div>
+
+<div class="edu school">
+  <img src="https://lh3.googleusercontent.com/proxy/xU3hw-YH8IcYrxX9NcOw-Yv1nKVtXw22ah9joK2pg37gpmL-GBtmqQJT3i4kEhQCMjFUczOKEyB6Fs_HUUE17mJqn2ar7QWSvUiu1MA" alt="">
+  <div class="schl">
+    <h1>Army Public School</h1>
+    <h3>Senior Secondary Education(2017-2019)</h3>
+  </div>
+</div>
+<div class="edu">
+  <img src="https://pbs.twimg.com/profile_images/1181411297486757890/Faf6nM62_400x400.jpg" alt="">
+  <div class="schl">
+    <h1>Indira College Of Engineering and Management</h1>
+    <h3>Engineering(2019)</h3>
+  </div>
+</div>
+</div>
+
+<!-- Projects -->
+<div class="bg" id="Projects">
+<div class="skills ">
+  <h2 >Open Source Project</h2>
+</div>
+
+  <h2 class="webD">Web Development</h2>
+  <div class="projects">
+  
+    <div class="pro">
+    <img src="images/code.png" alt="">
+<h2>  MOOD MUSE</h2>
+<h3>It's a Music App Website which is available on Playstore as well as on Apple Store</h3>
+  </div>
+  <div class="pro second">
+    <img src="images/code.png" alt="">
+    <h2>VIBER INDIA</h2>
+    <h3>A car rental website for a Delhi based Startup </h3>
+      </div>
+      <div class="pro third">
+        <img src="images/code.png" alt="">
+        <h2>PUTFORTH</h2>
+        <h3>A blogging site project for a Client</h3>
+          </div>
+</div>
+
+
+<h2 class="webD">Data Science and Machine Learning</h2>
+<div class="projects">
+<div class="pro ">
+  <img src="images/ds.png" alt="">
+<h2>LINEAR REGRESSION</h2>
+<h3>A basic regression model made using scikit-learn</h3>
+</div>
+<div class="pro ">
+  <img src="images/ds.png" alt="">
+  <h2>K NEAREST NEIGHBOUR</h2>
+  <h3>A classification model made using scikit-learn </h3>
+    </div>
+    <div class="pro">
+      <img src="images/ds.png" alt="">
+      <h2>LOGISTIC REGRESSION</h2>
+      <h3>A classification model made using scikit-learn</h3>
+        </div>
+</div>
+</div>
+<footer>
+  <img src="images/github.svg" alt="">
+  <img src="images/gmail.svg" alt="">
+  <img src="images/instagram.svg" alt="">
+  <img src="images/linkedin.svg" alt="">
+  <img src="images/youtube.svg" alt="">
+</footer>
+
 <!-- waves     -->
 <div class="waves">
     <svg width="100%" height="200px" fill="none" version="1.1"
@@ -122,7 +237,7 @@
       </path>
     </svg>
   </div>
-  
+ 
 
 </body>
 </html>
